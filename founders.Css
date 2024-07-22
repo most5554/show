@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(45deg , rgba(153,51,153,1), rgba(255,0,127,1),rgb(110, 0, 110));
+    background-size: cover;
+    animation: gradient 1s infinite alternate;
+    overflow-x: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background:#9d205f;
+    background-color:  rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 50% 50%;
+}
+.logo-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background:#9d205f;
+    background-color:  rgba(0, 0, 0, 0.4);
+}
+.founder {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px; /* لضمان وجود مساحة كافية لكل خانة */
+}
+.founder img {
+    border-radius: 50%;
+    width: 150px; /* تحديد عرض الصور */
+    height: 150px; /* تحديد ارتفاع الصور */
+    object-fit: cover; /* لضمان اقتصاص الصور بشكل جيد */
+    margin-bottom: 10px;
+}
+.founder h2 {
+    margin: 10px 0;
+}
+.founder p {
+    margin: 5px 0;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
